@@ -1,4 +1,10 @@
 
+output "aws_s3_yogesh_s_24_kms_arn" {
+  value = module.appcd_551e1d2b-88ec-5406-87cf-c51521bbe894.kms_arn
+  sensitive = false
+}
+
+
 output "aws_s3_yogesh_s_24_arn" {
   value = module.appcd_551e1d2b-88ec-5406-87cf-c51521bbe894.arn
   sensitive = false
@@ -17,8 +23,14 @@ output "aws_s3_yogesh_s_24_bucket_website_endpoint" {
 }
 
 
-output "aws_s3_yogesh_s_24_kms_arn" {
-  value = module.appcd_551e1d2b-88ec-5406-87cf-c51521bbe894.kms_arn
+output "aws_lambda_yogesh_s_function_url" {
+  value = module.appcd_00a20b0a-2ec0-5bdc-a08d-65a85dc81d5b.function_url
+  sensitive = false
+}
+
+
+output "aws_lambda_yogesh_s_invoke_arn" {
+  value = module.appcd_00a20b0a-2ec0-5bdc-a08d-65a85dc81d5b.invoke_arn
   sensitive = false
 }
 
@@ -31,18 +43,6 @@ output "aws_lambda_yogesh_s_function_arn" {
 
 output "aws_lambda_yogesh_s_function_name" {
   value = module.appcd_00a20b0a-2ec0-5bdc-a08d-65a85dc81d5b.function_name
-  sensitive = false
-}
-
-
-output "aws_lambda_yogesh_s_function_url" {
-  value = module.appcd_00a20b0a-2ec0-5bdc-a08d-65a85dc81d5b.function_url
-  sensitive = false
-}
-
-
-output "aws_lambda_yogesh_s_invoke_arn" {
-  value = module.appcd_00a20b0a-2ec0-5bdc-a08d-65a85dc81d5b.invoke_arn
   sensitive = false
 }
 
